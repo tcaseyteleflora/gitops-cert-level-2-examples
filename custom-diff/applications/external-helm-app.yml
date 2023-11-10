@@ -20,5 +20,16 @@ spec:
   # Sync policy
   syncPolicy:
     syncOptions:
-      - CreateNamespace=true  
+      - CreateNamespace=true
+
+  ignoreDifferences:
+  - group: ''
+    kind: Secret
+    jsonPointers:
+      - /data
+      - /stringData
+  - group: *
+    kind: *
+    managedFieldsManagers:
+    - kube-controller-manager
    
