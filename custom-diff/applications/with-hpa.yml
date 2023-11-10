@@ -9,7 +9,7 @@ spec:
   project: default
 
   source:
-    repoURL: hhttps://github.com/tcaseyteleflora/gitops-cert-level-2-examples
+    repoURL: https://github.com/tcaseyteleflora/gitops-cert-level-2-examples
     targetRevision: HEAD
     path: ./custom-diff/01-with-hpa
    
